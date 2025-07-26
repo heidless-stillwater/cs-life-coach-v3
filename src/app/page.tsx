@@ -31,11 +31,11 @@ const services = [
 
 const testimonials = [
   {
-    quote: "Working with them was a game-changer for my career. I landed my dream job within three months!",
+    quote: "TESTWorking with CS Fitness has been a game-changer. The personalized plan was easy to follow and incredibly effective. I've never felt stronger or more confident!",
     name: "Alex Johnson",
     title: "Software Engineer",
-    avatar: "https://placehold.co/100x100.png",
-    hint: "man smiling"
+    avatar: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/female-black-headshot-0.jpg",
+    hint: "woman smiling"
   },
   {
     quote: "I found a new sense of purpose and clarity. The guidance was invaluable in my personal growth journey.",
@@ -154,9 +154,10 @@ export default function Home() {
       <section id="testimonials" className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold">Success Stories from Our Clients</h2>
+            <Badge variant="outline" className="mb-4 text-sm">Testimonials</Badge>
+            <h2 className="font-headline text-3xl md:text-4xl font-bold">TESTSuccess Stories from Our Clients</h2>
             <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
-              Don't just take our word for it. Here's what our clients have to say about their experience.
+              TESTDon't just take our word for it. Here's what our clients have to say about their experience.
             </p>
           </div>
           <Carousel
