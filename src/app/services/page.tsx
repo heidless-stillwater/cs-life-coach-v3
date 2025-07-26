@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check } from "lucide-react";
@@ -19,9 +20,9 @@ const serviceDetails = [
     features: ["Confidence Building", "Habit Formation", "Mindfulness & Stress Reduction", "Goal Setting & Achievement"]
   },
   {
-    title: "Relationship & Family Coaching",
+    title: "TESTRelationship & Family Coaching",
     description: "Strengthen your connections with loved ones. Our coaching focuses on improving communication, resolving conflicts, and fostering deeper, more meaningful relationships.",
-    image: { src: "https://placehold.co/600x400.png", hint: "happy family" },
+    image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/relationship&family.png", hint: "happy family" },
     features: ["Effective Communication Skills", "Conflict Resolution", "Parenting Support", "Building Stronger Bonds"]
   },
   {
@@ -68,7 +69,7 @@ export default function ServicesPage() {
                                 </CardContent>
                                 <CardFooter>
                                     <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-base-plus">
-                                        <Link href="/contact">Inquire About {service.title}</Link>
+                                        <Link href="/contact">Inquire About {service.title.replace('TEST', '')}</Link>
                                     </Button>
                                 </CardFooter>
                             </Card>
