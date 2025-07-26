@@ -38,7 +38,7 @@ export default function AboutPage() {
                         </div>
                         <div className="order-1 md:order-2">
                             <Image 
-                                src="https://placehold.co/800x1000.png" 
+                                src="https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/female-black-headshot-1.webp" 
                                 alt="Life Coach Portrait" 
                                 width={800} 
                                 height={1000}
