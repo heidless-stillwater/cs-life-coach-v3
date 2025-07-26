@@ -6,6 +6,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
+import { Badge } from '@/components/ui/badge';
 
 const services = [
   {
@@ -56,7 +57,7 @@ export default function Home() {
       <section className="bg-secondary">
         <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-8 items-center py-16 md:py-24">
-                <div className="order-2 md:order-2 text-center md:text-left">
+                <div className="order-2 md:order-1 text-center md:text-left">
                     <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight text-foreground">
                         Find Your <span style={{ color: '#55a8e3' }}>Clarity</span>. <br /> Unlock Your <span style={{ color: '#55a8e3' }}>Growth</span>.
                     </h1>
@@ -72,7 +73,7 @@ export default function Home() {
                         </Button>
                     </div>
                 </div>
-                 <div className="order-1 md:order-1">
+                 <div className="order-1 md:order-2">
                     <Image
                         src="https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/homepage-hero.jpg"
                         alt="Inspiring landscape"
@@ -90,13 +91,14 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4 text-center">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold">Your Partner in Personal Transformation</h2>
+            <Badge variant="outline" className="mb-4 text-sm">Meet Your Coach</Badge>
+            <h2 className="font-headline text-3xl md:text-4xl font-bold">TEST Your Partner in Personal Transformation</h2>
             <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
-                At Clarity & Growth, we believe everyone has the potential to live a fulfilling and purposeful life. Our coaching philosophy is rooted in empathy, evidence-based techniques, and a deep commitment to your personal journey. We're here to provide the tools, support, and accountability you need to thrive.
+                TEST At Clarity & Growth, we believe everyone has the potential to live a fulfilling and purposeful life. Our coaching philosophy is rooted in empathy, evidence-based techniques, and a deep commitment to your personal journey. We're here to provide the tools, support, and accountability you need to thrive.
             </p>
             <div className="mt-8">
                 <Button asChild variant="link" className="text-primary text-base">
-                    <Link href="/about">Learn More About Our Approach <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                    <Link href="/about">test link <ArrowRight className="ml-2 h-4 w-4" /></Link>
                 </Button>
             </div>
         </div>
