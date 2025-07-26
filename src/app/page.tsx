@@ -111,11 +111,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-              <Card className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white/10 backdrop-blur-sm border-white/20">
-                <Image src="https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/career-coaching.jpg" alt="Career Coaching" width={600} height={400} className="w-full h-48 object-cover" data-ai-hint="career office" />
-              </Card>
-            
-            {services.slice(1).map((service, index) => (
+            {services.map((service, index) => (
               <Card key={service.title} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white/10 backdrop-blur-sm border-white/20">
                 <Image src={service.image.src} alt={service.title} width={600} height={400} className="w-full h-48 object-cover" data-ai-hint={service.image.hint} />
                 <CardHeader>
