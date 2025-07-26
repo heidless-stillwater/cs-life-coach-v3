@@ -1,13 +1,13 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import Image from "next/image";
-import { CheckCircle, PiggyBank } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const coreValues = [
     { text: "Empathy & Understanding", icon: CheckCircle },
     { text: "Integrity & Confidentiality", icon: CheckCircle },
     { text: "Empowerment & Growth", icon: CheckCircle },
-    { text: "Authenticity & Trust", icon: PiggyBank }
+    { text: "Authenticity & Trust", icon: CheckCircle }
 ];
 
 export default function AboutPage() {
