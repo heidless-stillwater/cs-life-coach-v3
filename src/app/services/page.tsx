@@ -24,6 +24,12 @@ const serviceDetails = [
     description: "Strengthen your connections with loved ones. Our coaching focuses on improving communication, resolving conflicts, and fostering deeper, more meaningful relationships.",
     image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/relationship%26family.png", hint: "happy family" },
     features: ["Effective Communication Skills", "Conflict Resolution", "Parenting Support", "Building Stronger Bonds"]
+  },
+  {
+    title: "TESTExecutive & Leadership Coaching",
+    description: "For leaders and executives aiming to enhance their impact. We focus on strategic thinking, team motivation, and authentic leadership presence.",
+    image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/Executive%26LeadershipCoaching.jpg", hint: "executive coaching" },
+    features: ["Strategic Decision Making", "Team Engagement & Motivation", "Executive Presence", "Performance Enhancement"]
   }
 ];
 
