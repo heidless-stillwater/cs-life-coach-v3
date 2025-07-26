@@ -6,11 +6,12 @@ import { Mail, MapPin, Phone } from "lucide-react";
 export default function ContactPage() {
     return (
         <>
-            <section className="py-20 md:py-28 bg-secondary text-center">
-                <div className="container mx-auto px-4">
-                    <Badge variant="outline" className="mb-4 text-sm">Contact Us</Badge>
+            <section className="relative bg-cover bg-center py-20 md:py-28 text-center" style={{ backgroundImage: "url('https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/homepage-hero.jpg')" }}>
+                <div className="absolute inset-0 bg-black/60" />
+                <div className="relative container mx-auto px-4 text-white">
+                    <Badge variant="outline" className="mb-4 text-sm border-white/80 text-white/90">Contact Us</Badge>
                     <h1 className="font-headline text-4xl md:text-5xl font-bold">Get In Touch</h1>
-                    <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
+                    <p className="mt-4 max-w-3xl mx-auto text-lg text-white/90">
                         We're here to answer your questions and start you on your journey. Reach out today for a free consultation.
                     </p>
                 </div>
