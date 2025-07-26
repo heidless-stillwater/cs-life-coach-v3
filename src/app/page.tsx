@@ -10,16 +10,16 @@ import { Badge } from '@/components/ui/badge';
 
 const services = [
   {
-    title: "TESTCareer Coaching",
-    description: "TESTNavigate your career path with confidence. We help with transitions, promotions, and finding fulfilling work.",
-    linkText: "TESTLearn Mode",
+    title: "Career Coaching",
+    description: "Navigate your career path with confidence. We help with transitions, promotions, and finding fulfilling work.",
+    linkText: "Learn More",
     image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/career-coaching.jpg", hint: "career office" }
   },
   {
     title: "Personal Growth",
     description: "Unlock your full potential. Build self-awareness, improve habits, and create a life you love.",
     linkText: "Learn More",
-    image: { src: "https://placehold.co/600x400.png", hint: "personal growth" }
+    image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/personal-growth.jpg", hint: "personal growth" }
   },
   {
     title: "Relationship & Family",
@@ -112,7 +112,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4 text-sm">What We Do</Badge>
-            <h2 className="font-headline text-3xl md:text-4xl font-bold">TESTHow We Can Help</h2>
+            <h2 className="font-headline text-3xl md:text-4xl font-bold">How We Can Help</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service) => (
