@@ -47,7 +47,7 @@ export function Header() {
             <Phone className="h-4 w-4" />
             1234 567 890
           </a>
-          <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90 text-xxl-plus" size="lg">
+          <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90 text-xl" size="lg">
             <Link href="/contact">Start Here</Link>
           </Button>
           <ThemeSwitcher />
