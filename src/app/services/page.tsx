@@ -16,7 +16,7 @@ const serviceDetails = [
   {
     title: "Personal TEST Growth & Mindset",
     description: "Unlock your full potential. Build self-awareness, improve habits, and create a life you love.",
-    image: { src: "https://storage.googleapis.com/heidless_case_studies/c_life_coach/images-live/personal-growth.jpg", hint: "personal growth" },
+    image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/personal-growth.jpg", hint: "personal growth" },
     features: ["Confidence Building", "Habit Formation", "Mindfulness & Stress Reduction", "Goal Setting & Achievement"]
   }
 ];
@@ -57,7 +57,7 @@ export default function ServicesPage() {
                                 </CardContent>
                                 <CardFooter>
                                     <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-base-plus">
-                                        <Link href="/contact">Inquire About {service.title.replace('TEST', '')}</Link>
+                                        <Link href="/contact">Inquire About {service.title.replace('TEST ', '')}</Link>
                                     </Button>
                                 </CardFooter>
                             </Card>
