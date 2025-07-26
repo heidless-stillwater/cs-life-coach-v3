@@ -110,7 +110,12 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
+            
+              <Card className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white/10 backdrop-blur-sm border-white/20">
+                <Image src="https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/career-coaching.jpg" alt="Career Coaching" width={600} height={400} className="w-full h-48 object-cover" data-ai-hint="career office" />
+              </Card>
+            
+            {services.slice(1).map((service, index) => (
               <Card key={service.title} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white/10 backdrop-blur-sm border-white/20">
                 <Image src={service.image.src} alt={service.title} width={600} height={400} className="w-full h-48 object-cover" data-ai-hint={service.image.hint} />
                 <CardHeader>
@@ -130,15 +135,9 @@ export default function Home() {
                   )}
                 </CardContent>
                 <CardFooter>
-                  {index === 0 ? (
-                     <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-base-plus">
-                        <Link href="/contact">Inquire About Career Coaching</Link>
-                    </Button>
-                  ) : (
-                    <Button asChild variant="link" className="text-accent p-0">
-                        <Link href="/services">{service.linkText} <ArrowRight className="ml-2 h-4 w-4" /></Link>
-                    </Button>
-                  )}
+                  <Button asChild variant="link" className="text-accent p-0">
+                      <Link href="/services">{service.linkText} <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                  </Button>
                 </CardFooter>
               </Card>
             ))}
