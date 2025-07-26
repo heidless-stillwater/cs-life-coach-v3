@@ -65,16 +65,16 @@ export default function Home() {
         <div className="absolute inset-0 bg-primary/70 z-10"></div>
         <div className="relative z-20 container mx-auto px-4">
           <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight">
-            Find Your Clarity. <br /> Unlock Your Growth.
+            Find Your <span style={{ color: '#55a8e3' }}>Clarity</span>. <br /> Unlock Your <span style={{ color: '#55a8e3' }}>Growth</span>.
           </h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-primary-foreground/90">
             Professional life coaching to help you navigate life's challenges and achieve your dreams.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-base-plus">
               <Link href="/contact">Get Started Today</Link>
             </Button>
-            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-base-plus">
               <Link href="/services">Our Services</Link>
             </Button>
           </div>
