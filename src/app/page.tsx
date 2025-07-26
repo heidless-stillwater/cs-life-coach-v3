@@ -5,15 +5,16 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Check } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 
 const services = [
   {
     title: "Career Coaching",
-    description: "Navigate your career path with confidence. We help with transitions, promotions, and finding fulfilling work.",
-    linkText: "Learn Mode",
-    image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/career-coaching.jpg", hint: "career office" }
+    description: "Whether you're looking for a promotion, a career change, or starting your own business, we provide the clarity and strategy to achieve your professional goals.",
+    linkText: "Inquire About Career Coaching",
+    image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/career-coaching.jpg", hint: "career office" },
+    features: ["Career Pathing & Strategy", "Resume & Interview Prep", "Leadership Development", "Work-Life Balance"]
   },
   {
     title: "Personal Growth",
@@ -109,19 +110,35 @@ export default function Home() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service) => (
+            {services.map((service, index) => (
               <Card key={service.title} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white/10 backdrop-blur-sm border-white/20">
                 <Image src={service.image.src} alt={service.title} width={600} height={400} className="w-full h-48 object-cover" data-ai-hint={service.image.hint} />
                 <CardHeader>
                   <CardTitle className="font-headline text-white">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  <p className="text-white/80">{service.description}</p>
+                  <p className="text-white/80 mb-4">{service.description}</p>
+                   {service.features && (
+                    <ul className="space-y-2 text-white/80">
+                      {service.features.map(feature => (
+                        <li key={feature} className="flex items-center gap-2">
+                          <Check className="h-5 w-5 text-accent" />
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </CardContent>
                 <CardFooter>
+                  {index === 0 ? (
+                     <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-base-plus">
+                        <Link href="/contact">Inquire About Career Coaching</Link>
+                    </Button>
+                  ) : (
                     <Button asChild variant="link" className="text-accent p-0">
                         <Link href="/services">{service.linkText} <ArrowRight className="ml-2 h-4 w-4" /></Link>
                     </Button>
+                  )}
                 </CardFooter>
               </Card>
             ))}
