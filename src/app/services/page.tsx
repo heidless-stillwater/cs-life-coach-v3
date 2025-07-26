@@ -14,16 +14,10 @@ const serviceDetails = [
     features: ["Career Pathing & Strategy", "Resume & Interview Prep", "Leadership Development", "Work-Life Balance"]
   },
   {
-    title: "Personal Growth & Mindset",
+    title: "Personal TEST Growth & Mindset",
     description: "Unlock your full potential. Build self-awareness, improve habits, and create a life you love.",
     image: { src: "https://storage.googleapis.com/heidless_case_studies/c_life_coach/images-live/personal-growth.jpg", hint: "personal growth" },
     features: ["Confidence Building", "Habit Formation", "Mindfulness & Stress Reduction", "Goal Setting & Achievement"]
-  },
-  {
-    title: "Relationship & Family Coaching",
-    description: "Strengthen your connections with loved ones. Our coaching focuses on improving communication, resolving conflicts, and fostering deeper, more meaningful relationships.",
-    image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/relationship%26family.png", hint: "happy family" },
-    features: ["Effective Communication Skills", "Conflict Resolution", "Parenting Support", "Building Stronger Bonds"]
   }
 ];
 
