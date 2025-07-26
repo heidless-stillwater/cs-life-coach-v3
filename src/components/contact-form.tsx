@@ -65,7 +65,7 @@ export function ContactForm() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 flex flex-col flex-grow">
         <FormField
           control={form.control}
           name="name"
@@ -109,12 +109,12 @@ export function ContactForm() {
           control={form.control}
           name="message"
           render={({ field }) => (
-            <FormItem>
+            <FormItem className="flex flex-col flex-grow">
               <FormLabel>Your Message</FormLabel>
               <FormControl>
                 <Textarea
                   placeholder="Tell us how we can help you..."
-                  className="min-h-[150px]"
+                  className="flex-grow min-h-[150px]"
                   {...field}
                 />
               </FormControl>
