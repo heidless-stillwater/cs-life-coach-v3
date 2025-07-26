@@ -14,8 +14,8 @@ const serviceDetails = [
   },
   {
     title: "Personal Growth & Mindset",
-    description: "Break through self-limiting beliefs, build confidence, and cultivate a growth mindset. We help you unlock your potential and live a more intentional life.",
-    image: { src: "https://placehold.co/600x400.png", hint: "personal growth" },
+    description: "Unlock your full potential. Build self-awareness, improve habits, and create a life you love.",
+    image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/personal-growth.jpg", hint: "personal growth" },
     features: ["Confidence Building", "Habit Formation", "Mindfulness & Stress Reduction", "Goal Setting & Achievement"]
   },
   {
@@ -39,7 +39,7 @@ export default function ServicesPage() {
                 <div className="absolute inset-0 bg-black/60" />
                 <div className="relative container mx-auto px-4 text-white">
                     <Badge variant="outline" className="mb-4 text-sm border-white/80 text-white/90">What We Do</Badge>
-                    <h1 className="font-headline text-4xl md:text-5xl font-bold">Our TEST Services</h1>
+                    <h1 className="font-headline text-4xl md:text-5xl font-bold">Our Coaching Services</h1>
                     <p className="mt-4 max-w-3xl mx-auto text-lg text-white/90">
                         Tailored programs designed to help you achieve clarity, growth, and success in key areas of your life.
                     </p>
