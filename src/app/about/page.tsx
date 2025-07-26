@@ -1,13 +1,13 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import Image from "next/image";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, PiggyBank } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 const coreValues = [
-    "Empathy & Understanding",
-    "Integrity & Confidentiality",
-    "Empowerment & Growth",
-    "Authenticity & Trust"
+    { text: "Empathy & Understanding", icon: CheckCircle },
+    { text: "Integrity & Confidentiality", icon: CheckCircle },
+    { text: "Empowerment & Growth", icon: PiggyBank },
+    { text: "Authenticity & Trust", icon: PiggyBank }
 ];
 
 export default function AboutPage() {
@@ -53,24 +53,27 @@ export default function AboutPage() {
             <section className="py-16 md:py-24 bg-secondary">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
-                        <h2 className="font-headline text-3xl md:text-4xl font-bold">Our Philosophy & Approach</h2>
+                        <h2 className="font-headline text-3xl md:text-4xl font-bold">TESTOur Philosophy & Approach</h2>
                         <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
                             We believe that coaching is a collaborative partnership. Our methodology combines proven psychological principles with personalized strategies to create a supportive and transformative experience.
                         </p>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {coreValues.map((value) => (
-                             <Card key={value} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-                                <CardHeader>
-                                    <div className="mx-auto bg-primary text-primary-foreground rounded-full h-12 w-12 flex items-center justify-center">
-                                        <CheckCircle className="h-6 w-6" />
-                                    </div>
-                                </CardHeader>
-                                <CardContent>
-                                    <h3 className="font-headline text-xl font-semibold">{value}</h3>
-                                </CardContent>
-                            </Card>
-                        ))}
+                        {coreValues.map((value) => {
+                            const Icon = value.icon;
+                            return (
+                                <Card key={value.text} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                    <CardHeader>
+                                        <div className="mx-auto bg-primary text-primary-foreground rounded-full h-12 w-12 flex items-center justify-center">
+                                            <Icon className="h-6 w-6" />
+                                        </div>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <h3 className="font-headline text-xl font-semibold">{value.text}</h3>
+                                    </CardContent>
+                                </Card>
+                            )
+                        })}
                     </div>
                 </div>
             </section>
