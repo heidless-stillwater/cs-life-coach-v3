@@ -3,12 +3,13 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Check } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
 
 const serviceDetails = [
   {
     title: "Career Coaching",
     description: "Whether you're looking for a promotion, a career change, or starting your own business, we provide the clarity and strategy to achieve your professional goals.",
-    image: { src: "https://placehold.co/600x400.png", hint: "career office" },
+    image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/career-coaching.jpg", hint: "career office" },
     features: ["Career Pathing & Strategy", "Resume & Interview Prep", "Leadership Development", "Work-Life Balance"]
   },
   {
@@ -34,10 +35,12 @@ const serviceDetails = [
 export default function ServicesPage() {
     return (
         <>
-            <section className="py-20 md:py-28 bg-secondary text-center">
-                <div className="container mx-auto px-4">
-                    <h1 className="font-headline text-4xl md:text-5xl font-bold">Our Coaching Services</h1>
-                    <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
+            <section className="relative bg-cover bg-center py-20 md:py-28 text-center" style={{ backgroundImage: "url('https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/homepage-hero.jpg')" }}>
+                <div className="absolute inset-0 bg-black/60" />
+                <div className="relative container mx-auto px-4 text-white">
+                    <Badge variant="outline" className="mb-4 text-sm border-white/80 text-white/90">What We Do</Badge>
+                    <h1 className="font-headline text-4xl md:text-5xl font-bold">Our TEST Services</h1>
+                    <p className="mt-4 max-w-3xl mx-auto text-lg text-white/90">
                         Tailored programs designed to help you achieve clarity, growth, and success in key areas of your life.
                     </p>
                 </div>
@@ -64,7 +67,7 @@ export default function ServicesPage() {
                                     </ul>
                                 </CardContent>
                                 <CardFooter>
-                                    <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+                                    <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-base-plus">
                                         <Link href="/contact">Inquire About {service.title}</Link>
                                     </Button>
                                 </CardFooter>
