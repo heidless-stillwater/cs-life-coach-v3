@@ -31,23 +31,11 @@ export function Footer() {
       <div className="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
 
-            <div className="space-y-8">
+            <div>
                  <div>
                     <h3 className="font-headline text-lg font-semibold">About Us</h3>
                     <ul className="mt-4 space-y-2">
                     {aboutLinks.map((link) => (
-                        <li key={link.href}>
-                        <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                            {link.label}
-                        </Link>
-                        </li>
-                    ))}
-                    </ul>
-                </div>
-                 <div>
-                    <h3 className="font-headline text-lg font-semibold">Legal</h3>
-                    <ul className="mt-4 space-y-2">
-                    {legalLinks.map((link) => (
                         <li key={link.href}>
                         <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                             {link.label}
@@ -76,17 +64,31 @@ export function Footer() {
             </ul>
           </div>
           
-           <div>
-            <h3 className="font-headline text-lg font-semibold">Quick Links</h3>
-            <ul className="mt-4 space-y-2">
-              {quickLinks.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+           <div className="space-y-8">
+            <div>
+                <h3 className="font-headline text-lg font-semibold">Quick Links</h3>
+                <ul className="mt-4 space-y-2">
+                {quickLinks.map((link) => (
+                    <li key={link.href}>
+                    <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                        {link.label}
+                    </Link>
+                    </li>
+                ))}
+                </ul>
+            </div>
+            <div>
+                <h3 className="font-headline text-lg font-semibold">Legal</h3>
+                <ul className="mt-4 space-y-2">
+                {legalLinks.map((link) => (
+                    <li key={link.href}>
+                    <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                        {link.label}
+                    </Link>
+                    </li>
+                ))}
+                </ul>
+            </div>
           </div>
           
           <div>
