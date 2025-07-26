@@ -8,7 +8,7 @@ import { Menu, Phone } from 'lucide-react';
 import { Logo } from '@/components/logo';
 import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
-import { ThemePersistence } from '@/components/theme-persistence';
+import { ThemeSwitcher } from '@/components/theme-switcher';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -50,7 +50,7 @@ export function Header() {
           <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
             <Link href="/contact">Start Here</Link>
           </Button>
-          <ThemePersistence />
+          <ThemeSwitcher />
         </div>
 
         <div className="md:hidden">
@@ -88,7 +88,7 @@ export function Header() {
                     <Link href="/contact">Start Here</Link>
                   </Button>
                    <div className="mx-auto">
-                    <ThemePersistence />
+                    <ThemeSwitcher />
                   </div>
                 </div>
               </div>
