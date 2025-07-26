@@ -30,7 +30,7 @@ export default function AboutPage() {
                         <div className="order-2 md:order-1">
                             <h2 className="font-headline text-3xl md:text-4xl font-bold">Meet Your Coach</h2>
                             <p className="mt-4 text-muted-foreground">
-                                With over a TEST decade of experience in personal development and certified coaching, I founded Clarity & Growth with a single mission: to empower individuals to overcome obstacles, cultivate self-awareness, and design a life they are genuinely passionate about.
+                                With over a decade of experience in personal development and certified coaching, I founded Clarity & Growth with a single mission: to empower individuals to overcome obstacles, cultivate self-awareness, and design a life they are genuinely passionate about.
                             </p>
                             <p className="mt-4 text-muted-foreground">
                                 My journey began in the corporate world, where I witnessed firsthand the immense pressure and lack of personal fulfillment many professionals face. This inspired a shift towards a career dedicated to helping others find balance, purpose, and success on their own terms. My approach is not about giving answers, but about asking the right questions to help you uncover your own.
