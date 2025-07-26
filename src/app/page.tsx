@@ -92,13 +92,13 @@ export default function Home() {
       <section id="about" className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4 text-center">
             <Badge variant="outline" className="mb-4 text-sm">Meet Your Coach</Badge>
-            <h2 className="font-headline text-3xl md:text-4xl font-bold">TEST Your Partner in Personal Transformation</h2>
+            <h2 className="font-headline text-3xl md:text-4xl font-bold">Your Partner in Personal Transformation</h2>
             <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
-                TEST At Clarity & Growth, we believe everyone has the potential to live a fulfilling and purposeful life. Our coaching philosophy is rooted in empathy, evidence-based techniques, and a deep commitment to your personal journey. We're here to provide the tools, support, and accountability you need to thrive.
+                At Clarity & Growth, we believe everyone has the potential to live a fulfilling and purposeful life. Our coaching philosophy is rooted in empathy, evidence-based techniques, and a deep commitment to your personal journey. We're here to provide the tools, support, and accountability you need to thrive.
             </p>
             <div className="mt-8">
                 <Button asChild variant="link" className="text-primary text-base">
-                    <Link href="/about">test link <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                    <Link href="/about">Learn More About Our Approach <ArrowRight className="ml-2 h-4 w-4" /></Link>
                 </Button>
             </div>
         </div>
