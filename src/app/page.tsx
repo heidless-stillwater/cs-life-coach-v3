@@ -39,16 +39,16 @@ const testimonials = [
   },
   {
     quote: "I found a new sense of purpose and clarity. The guidance was invaluable in my personal growth journey.",
-    name: "Samanthaee",
+    name: "Samantha Lee",
     title: "Marketing Manager",
-    avatar: "https://placehold.co/100x100.png",
+    avatar: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/female-asian-headshot-0.jpg",
     hint: "woman portrait"
   },
   {
     quote: "The coaching sessions helped our family communicate better and resolve conflicts constructively. Highly recommended.",
     name: "The Garcia Family",
     title: "Clients",
-    avatar: "https://placehold.co/100x100.png",
+    avatar: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/family-portait.jpg",
     hint: "family portrait"
   }
 ];
