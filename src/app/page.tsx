@@ -138,13 +138,13 @@ export default function Home() {
        {/* CTA Section */}
       <section className="bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 py-16 text-center">
-          <h2 className="font-headline text-3xl font-bold">Ready to Take the Next Step?</h2>
+          <h2 className="font-headline text-3xl font-bold">TESTReady to Take the Next Step?</h2>
           <p className="mt-2 max-w-2xl mx-auto">
-            Your journey to a more fulfilling life starts with a single conversation. Let's explore how we can work together.
+            TESTYour journey to a more fulfilling life starts with a single conversation. Let's explore how we can work together.
           </p>
           <div className="mt-8">
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
-                <Link href="/contact">Book a Free Consultation</Link>
+            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-base-plus">
+                <Link href="/contact">TESTBook Your Free Consultation</Link>
             </Button>
           </div>
         </div>
