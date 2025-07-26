@@ -77,7 +77,6 @@ export default function Home() {
             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
               <Link href="/services">Our Services</Link>
             </Button>
-            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">Test</Button>
           </div>
         </div>
       </section>
