@@ -4,12 +4,12 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Star } from "lucide-react";
 
 const allTestimonials = [
-  { quote: "Working with them was a game-changer for my career. I landed my dream job within three months!", name: "Alex Johnson", title: "Software Engineer", avatar: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/female-black-headshot-0.jpg", hint: "woman smiling", stars: 3 },
+  { quote: "Working with them was a game-changer for my career. I landed my dream job within three months!", name: "Alex Johnson", title: "Software Engineer", avatar: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/male-black-headshot-0.jpg", hint: "man smiling", stars: 3 },
   { quote: "I found a new sense of purpose and clarity. The guidance was invaluable in my personal growth journey.", name: "Samantha Lee", title: "Marketing Manager", avatar: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/female-asian-headshot-0.jpg", hint: "woman portrait", stars: 3 },
   { quote: "The coaching sessions helped our family communicate better and resolve conflicts constructively. Highly recommended.", name: "The Garcia Family", title: "Clients", avatar: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/family-portait.jpg", hint: "family portrait", stars: 3 },
-  { quote: "An incredible listener who provides practical, actionable advice. My confidence has skyrocketed.", name: "Ben Carter", title: "Entrepreneur", avatar: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/family-portait.jpg", hint: "man professional", stars: 3 },
-  { quote: "I was feeling stuck and overwhelmed. Now I have a clear roadmap and the motivation to follow it. Thank you!", name: "Chloe Wang", title: "Graphic Designer", avatar: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/family-portait.jpg", hint: "woman creative", stars: 3 },
-  { quote: "The best investment I've made in myself. The results have been transformative, both personally and professionally.", name: "David Miller", title: "Architect", avatar: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/family-portait.jpg", hint: "professional architect", stars: 3 }
+  { quote: "An incredible listener who provides practical, actionable advice. My confidence has skyrocketed.", name: "Ben Carter", title: "Entrepreneur", avatar: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/male-white-headshot-0.webp", hint: "man professional", stars: 3 },
+  { quote: "I was feeling stuck and overwhelmed. Now I have a clear roadmap and the motivation to follow it. Thank you!", name: "Chloe Wang", title: "Graphic Designer", avatar: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/female-asian-headshot-0.jpg", hint: "woman creative", stars: 3 },
+  { quote: "The best investment I've made in myself. The results have been transformative, both personally and professionally.", name: "David Miller", title: "Architect", avatar: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/male-white-headshot-1.jpeg", hint: "professional architect", stars: 3 }
 ];
 
 export default function TestimonialsPage() {
