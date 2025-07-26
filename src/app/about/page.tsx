@@ -1,21 +1,24 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import Image from "next/image";
 import { CheckCircle } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 const coreValues = [
-    "Empathy & Understanding",
-    "Integrity & Confidentiality",
-    "Empowerment & Growth",
-    "Authenticity & Trust"
+    { text: "Empathy & Understanding", icon: CheckCircle },
+    { text: "Integrity & Confidentiality", icon: CheckCircle },
+    { text: "Empowerment & Growth", icon: CheckCircle },
+    { text: "Authenticity & Trust", icon: CheckCircle }
 ];
 
 export default function AboutPage() {
     return (
         <>
-            <section className="py-20 md:py-28 bg-secondary text-center">
-                <div className="container mx-auto px-4">
+            <section className="relative bg-cover bg-center py-20 md:py-28 text-center" style={{ backgroundImage: "url('https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/homepage-hero.jpg')" }}>
+                <div className="absolute inset-0 bg-black/60" />
+                <div className="relative container mx-auto px-4 text-white">
+                    <Badge variant="outline" className="mb-4 text-sm border-white/80 text-white/90">About</Badge>
                     <h1 className="font-headline text-4xl md:text-5xl font-bold">About Clarity & Growth</h1>
-                    <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
+                    <p className="mt-4 max-w-3xl mx-auto text-lg text-white/90">
                         Your dedicated partner in navigating life's complexities to unlock your true potential.
                     </p>
                 </div>
@@ -35,7 +38,7 @@ export default function AboutPage() {
                         </div>
                         <div className="order-1 md:order-2">
                             <Image 
-                                src="https://placehold.co/800x1000.png" 
+                                src="https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/female-black-headshot-1.webp" 
                                 alt="Life Coach Portrait" 
                                 width={800} 
                                 height={1000}
@@ -56,18 +59,21 @@ export default function AboutPage() {
                         </p>
                     </div>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                        {coreValues.map((value) => (
-                             <Card key={value} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-                                <CardHeader>
-                                    <div className="mx-auto bg-primary text-primary-foreground rounded-full h-12 w-12 flex items-center justify-center">
-                                        <CheckCircle className="h-6 w-6" />
-                                    </div>
-                                </CardHeader>
-                                <CardContent>
-                                    <h3 className="font-headline text-xl font-semibold">{value}</h3>
-                                </CardContent>
-                            </Card>
-                        ))}
+                        {coreValues.map((value) => {
+                            const Icon = value.icon;
+                            return (
+                                <Card key={value.text} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
+                                    <CardHeader>
+                                        <div className="mx-auto bg-primary text-primary-foreground rounded-full h-12 w-12 flex items-center justify-center">
+                                            <Icon className="h-6 w-6" />
+                                        </div>
+                                    </CardHeader>
+                                    <CardContent>
+                                        <h3 className="font-headline text-xl font-semibold">{value.text}</h3>
+                                    </CardContent>
+                                </Card>
+                            )
+                        })}
                     </div>
                 </div>
             </section>

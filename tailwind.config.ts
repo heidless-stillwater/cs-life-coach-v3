@@ -10,9 +10,14 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['"PT Sans"', 'sans-serif'],
-        headline: ['"Playfair Display"', 'serif'],
+        body: ['"Inter"', 'sans-serif'],
+        headline: ['"Lato"', 'sans-serif'],
         code: ['monospace'],
+      },
+      fontSize: {
+        'base-plus': '1.0625rem', // 17px
+        'xl-plus': '1.375rem', // 22px
+        xl: '1.25rem', // 20px
       },
       colors: {
         background: 'hsl(var(--background))',
