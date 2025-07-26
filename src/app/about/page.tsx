@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import Image from "next/image";
 import { CheckCircle } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 const coreValues = [
     "Empathy & Understanding",
@@ -12,10 +13,12 @@ const coreValues = [
 export default function AboutPage() {
     return (
         <>
-            <section className="py-20 md:py-28 bg-secondary text-center">
-                <div className="container mx-auto px-4">
+            <section className="relative bg-cover bg-center py-20 md:py-28 text-center" style={{ backgroundImage: "url('https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/homepage-hero.jpg')" }}>
+                <div className="absolute inset-0 bg-black/60" />
+                <div className="relative container mx-auto px-4 text-white">
+                    <Badge variant="outline" className="mb-4 text-sm border-white/80 text-white/90">About</Badge>
                     <h1 className="font-headline text-4xl md:text-5xl font-bold">About Clarity & Growth</h1>
-                    <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
+                    <p className="mt-4 max-w-3xl mx-auto text-lg text-white/90">
                         Your dedicated partner in navigating life's complexities to unlock your true potential.
                     </p>
                 </div>
