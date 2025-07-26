@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
@@ -76,6 +77,7 @@ export default function Home() {
             <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary">
               <Link href="/services">Our Services</Link>
             </Button>
+            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">Test</Button>
           </div>
         </div>
       </section>
