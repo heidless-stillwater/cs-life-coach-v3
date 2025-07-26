@@ -12,20 +12,20 @@ const services = [
   {
     title: "Career Coaching",
     description: "Navigate your career path with confidence. We help with transitions, promotions, and finding fulfilling work.",
-    linkText: "Learn Mode",
+    linkText: "Learn More",
     image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/career-coaching.jpg", hint: "career office" }
   },
   {
-    title: "TESTPersonal Growth",
-    description: "TESTUnlock your full potential. Build self-awareness, improve habits, and create a life you love.",
-    linkText: "TESTLearn Mode",
+    title: "Personal Growth",
+    description: "Unlock your full potential. Build self-awareness, improve habits, and create a life you love.",
+    linkText: "Learn More",
     image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/personal-growth.jpg", hint: "personal growth" }
   },
   {
     title: "Relationship & Family",
     description: "Foster stronger connections. Improve communication and build healthier, more meaningful relationships.",
     linkText: "Learn More",
-    image: { src: "https://placehold.co/600x400.png", hint: "happy family" }
+    image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/relationship&family.png", hint: "happy family" }
   }
 ];
 
