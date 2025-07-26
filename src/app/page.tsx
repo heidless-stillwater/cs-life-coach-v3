@@ -74,7 +74,7 @@ export default function Home() {
                 </div>
                  <div className="order-1 md:order-1">
                     <Image
-                        src="https://placehold.co/800x800.png"
+                        src="https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/homepage-hero.jpg"
                         alt="Inspiring landscape"
                         width={800}
                         height={800}
