@@ -10,25 +10,25 @@ const serviceDetails = [
   {
     title: "Career Coaching",
     description: "Whether you're looking for a promotion, a career change, or starting your own business, we provide the clarity and strategy to achieve your professional goals.",
-    image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/career-coaching.jpg", hint: "career office" },
+    image: { src: "https://storage.googleapis.com/heidless_case_studies/c_life_coach/images-live/career-coaching.jpg", hint: "career office" },
     features: ["Career Pathing & Strategy", "Resume & Interview Prep", "Leadership Development", "Work-Life Balance"]
   },
   {
     title: "Personal Growth & Mindset",
     description: "Unlock your full potential. Build self-awareness, improve habits, and create a life you love.",
-    image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/personal-growth.jpg", hint: "personal growth" },
+    image: { src: "https://storage.googleapis.com/heidless_case_studies/c_life_coach/images-live/personal-growth.jpg", hint: "personal growth" },
     features: ["Confidence Building", "Habit Formation", "Mindfulness & Stress Reduction", "Goal Setting & Achievement"]
   },
   {
-    title: "TESTRelationship & Family Coaching",
+    title: "Relationship & Family Coaching",
     description: "Strengthen your connections with loved ones. Our coaching focuses on improving communication, resolving conflicts, and fostering deeper, more meaningful relationships.",
-    image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/relationship&family.png", hint: "happy family" },
+    image: { src: "https://storage.googleapis.com/heidless_case_studies/c_life_coach/images-live/relationship%26family.png", hint: "happy family" },
     features: ["Effective Communication Skills", "Conflict Resolution", "Parenting Support", "Building Stronger Bonds"]
   },
   {
-    title: "Executive & Leadership Coaching",
+    title: "TESTExecutive & Leadership Coaching",
     description: "For leaders and executives aiming to enhance their impact. We focus on strategic thinking, team motivation, and authentic leadership presence.",
-    image: { src: "https://placehold.co/600x400.png", hint: "business meeting" },
+    image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/Executive%26LeadershipCoaching.jpg", hint: "business meeting" },
     features: ["Strategic Decision Making", "Team Engagement & Motivation", "Executive Presence", "Performance Enhancement"]
   }
 ];
