@@ -57,28 +57,18 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="bg-secondary">
-        <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-8 items-center py-16 md:py-24">
-                <div className="order-1">
-                    <Image
-                        src="https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/homepage-hero.jpg"
-                        alt="Inspiring landscape"
-                        width={800}
-                        height={800}
-                        className="rounded-lg shadow-xl mx-auto"
-                        data-ai-hint="inspiring landscape"
-                        priority
-                    />
-                </div>
-                <div className="order-2 text-center md:text-left">
-                    <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight text-foreground">
+      <section className="relative bg-secondary bg-cover bg-center" style={{ backgroundImage: "url('https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/homepage-hero.jpg')" }}>
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="relative container mx-auto px-4">
+            <div className="flex items-center justify-center text-center py-32 md:py-48">
+                <div>
+                    <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight text-white">
                         Find Your <span style={{ color: '#55a8e3' }}>Clarity</span>. <br /> Unlock Your <span style={{ color: '#55a8e3' }}>Growth</span>.
                     </h1>
-                    <p className="mt-4 max-w-xl mx-auto md:mx-0 text-lg md:text-xl text-muted-foreground">
+                    <p className="mt-4 max-w-xl mx-auto text-lg md:text-xl text-white/90">
                         Professional life coaching to help you navigate life's challenges and achieve your dreams.
                     </p>
-                    <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
+                    <div className="mt-8 flex flex-wrap justify-center gap-4">
                         <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-base-plus">
                             <Link href="/contact">Get Started Today</Link>
                         </Button>
