@@ -24,7 +24,7 @@ const services = [
   {
     title: "Relationship & Family",
     description: "Foster stronger connections. Improve communication and build healthier, more meaningful relationships.",
-    linkText: "TESTLearn Mode",
+    linkText: "Learn Mode",
     image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/relationship&family.png", hint: "happy family" }
   }
 ];
