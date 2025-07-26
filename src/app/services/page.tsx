@@ -14,7 +14,7 @@ const serviceDetails = [
     features: ["Career Pathing & Strategy", "Resume & Interview Prep", "Leadership Development", "Work-Life Balance"]
   },
   {
-    title: "Personal TEST Growth & Mindset",
+    title: "Personal Growth & Mindset",
     description: "Unlock your full potential. Build self-awareness, improve habits, and create a life you love.",
     image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/personal-growth.jpg", hint: "personal growth" },
     features: ["Confidence Building", "Habit Formation", "Mindfulness & Stress Reduction", "Goal Setting & Achievement"]
@@ -26,7 +26,7 @@ const serviceDetails = [
     features: ["Effective Communication Skills", "Conflict Resolution", "Parenting Support", "Building Stronger Bonds"]
   },
   {
-    title: "TESTExecutive & Leadership Coaching",
+    title: "Executive & Leadership Coaching",
     description: "For leaders and executives aiming to enhance their impact. We focus on strategic thinking, team motivation, and authentic leadership presence.",
     image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/Executive%26LeadershipCoaching.jpg", hint: "executive coaching" },
     features: ["Strategic Decision Making", "Team Engagement & Motivation", "Executive Presence", "Performance Enhancement"]
@@ -54,7 +54,7 @@ export default function ServicesPage() {
                             <Card key={index} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
                                 <Image src={service.image.src} alt={service.title} width={600} height={400} className="w-full h-64 object-cover" data-ai-hint={service.image.hint} />
                                 <CardHeader>
-                                    <CardTitle className="font-headline text-2xl">{service.title.replace('TEST ', '')}</CardTitle>
+                                    <CardTitle className="font-headline text-2xl">{service.title}</CardTitle>
                                     <CardDescription>{service.description}</CardDescription>
                                 </CardHeader>
                                 <CardContent className="flex-grow">
@@ -69,7 +69,7 @@ export default function ServicesPage() {
                                 </CardContent>
                                 <CardFooter>
                                     <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90 text-base-plus">
-                                        <Link href="/contact">Inquire About {service.title.replace('TEST ', '')}</Link>
+                                        <Link href="/contact">Inquire About {service.title}</Link>
                                     </Button>
                                 </CardFooter>
                             </Card>
