@@ -15,11 +15,12 @@ const allTestimonials = [
 export default function TestimonialsPage() {
     return (
         <>
-            <section className="py-20 md:py-28 bg-secondary text-center">
-                <div className="container mx-auto px-4">
-                    <Badge variant="outline" className="mb-4 text-sm">Testimonials</Badge>
+            <section className="relative bg-cover bg-center py-20 md:py-28 text-center" style={{ backgroundImage: "url('https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/homepage-hero.jpg')" }}>
+                <div className="absolute inset-0 bg-black/60" />
+                <div className="relative container mx-auto px-4 text-white">
+                    <Badge variant="outline" className="mb-4 text-sm border-white/80 text-white/90">Testimonials</Badge>
                     <h1 className="font-headline text-4xl md:text-5xl font-bold">Client Success Stories</h1>
-                    <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
+                    <p className="mt-4 max-w-3xl mx-auto text-lg text-white/90">
                         Real stories from real people who have transformed their lives with our coaching.
                     </p>
                 </div>
