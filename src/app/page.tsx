@@ -104,7 +104,7 @@ export default function Home() {
         <div className="container mx-auto px-4 relative">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4 text-sm border-white/80 text-white/90">What We Do</Badge>
-            <h2 className="font-headline text-3xl md:text-4xl font-bold">Our Coaching Services</h2>
+            <h2 className="font-headline text-3xl md:text-4xl font-bold">Our TEST Coaching Services</h2>
             <p className="mt-4 max-w-3xl mx-auto text-lg text-white/90">
                 Tailored programs designed to help you achieve clarity, growth, and success in key areas of your life.
             </p>
