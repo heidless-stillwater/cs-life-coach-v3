@@ -1,38 +1,62 @@
-import { Mail, MapPin, Phone } from 'lucide-react';
+import { Facebook, Linkedin, Mail, MapPin, Phone, Twitter } from 'lucide-react';
 import Link from 'next/link';
 import { Logo } from '@/components/logo';
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 
-const navLinks = [
+const aboutLinks = [
   { href: '/about', label: 'About Us' },
-  { href: '/services', label: 'Our Services' },
   { href: '/testimonials', label: 'Testimonials' },
-  { href: '/contact', label: 'Contact' },
 ];
+
+const legalLinks = [
+    { href: '#', label: 'Privacy Policy' },
+    { href: '#', label: 'Terms of Service' },
+]
+
+const quickLinks = [
+    { href: '/services', label: 'Our Services' },
+    { href: '/contact', label: 'Contact' },
+];
+
+const socialLinks = [
+    { href: '#', icon: <Facebook /> },
+    { href: '#', icon: <Twitter /> },
+    { href: '#', icon: <Linkedin /> },
+]
 
 export function Footer() {
   return (
     <footer className="bg-secondary text-secondary-foreground border-t">
       <div className="container mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
-          <div className="md:col-span-1">
-            <Logo />
-            <p className="mt-4 text-sm text-muted-foreground">
-              Helping you find clarity and achieve your personal and professional goals.
-            </p>
-          </div>
 
-          <div>
-            <h3 className="font-headline text-lg font-semibold">Quick Links</h3>
-            <ul className="mt-4 space-y-2">
-              {navLinks.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+            <div className="space-y-8">
+                 <div>
+                    <h3 className="font-headline text-lg font-semibold">About Us</h3>
+                    <ul className="mt-4 space-y-2">
+                    {aboutLinks.map((link) => (
+                        <li key={link.href}>
+                        <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                            {link.label}
+                        </Link>
+                        </li>
+                    ))}
+                    </ul>
+                </div>
+                 <div>
+                    <h3 className="font-headline text-lg font-semibold">Legal</h3>
+                    <ul className="mt-4 space-y-2">
+                    {legalLinks.map((link) => (
+                        <li key={link.href}>
+                        <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                            {link.label}
+                        </Link>
+                        </li>
+                    ))}
+                    </ul>
+                </div>
+            </div>
 
           <div>
             <h3 className="font-headline text-lg font-semibold">Contact Info</h3>
@@ -52,17 +76,38 @@ export function Footer() {
             </ul>
           </div>
           
-          <div>
-            <h3 className="font-headline text-lg font-semibold">Legal</h3>
+           <div>
+            <h3 className="font-headline text-lg font-semibold">Quick Links</h3>
             <ul className="mt-4 space-y-2">
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Privacy Policy</Link></li>
-                <li><Link href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Terms of Service</Link></li>
+              {quickLinks.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
+          </div>
+          
+          <div>
+            <h3 className="font-headline text-lg font-semibold">Stay Updated</h3>
+            <p className="mt-4 text-sm text-muted-foreground">Subscribe to our newsletter for the latest updates and offers.</p>
+            <form className="mt-4 flex gap-2">
+                <Input type="email" placeholder="Your Email" className="flex-1" />
+                <Button type="submit" variant="default">Subscribe</Button>
+            </form>
           </div>
         </div>
 
-        <div className="mt-12 border-t border-border pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Clarity & Growth. All rights reserved. Website: website.com</p>
+        <div className="mt-12 border-t border-border pt-8 flex justify-between items-center flex-wrap gap-4">
+            <p className="text-sm text-muted-foreground text-left">&copy; {new Date().getFullYear()} Clarity & Growth. All rights reserved.</p>
+            <div className="flex gap-4 items-center">
+                {socialLinks.map((link, i) => (
+                    <Link key={i} href={link.href} className="text-muted-foreground hover:text-primary transition-colors">
+                        {link.icon}
+                    </Link>
+                ))}
+            </div>
         </div>
       </div>
     </footer>
