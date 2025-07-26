@@ -33,7 +33,7 @@ export function Header() {
               key={link.href} 
               href={link.href} 
               className={cn(
-                "text-sm font-medium transition-colors hover:text-primary",
+                "text-base-plus font-medium transition-colors hover:text-primary",
                 pathname === link.href ? "text-primary" : "text-foreground/70"
               )}
             >
@@ -43,11 +43,11 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-4 md:flex">
-          <a href="tel:1234567890" className="flex items-center gap-2 text-sm font-medium text-foreground/70 transition-colors hover:text-primary">
+          <a href="tel:1234567890" className="flex items-center gap-2 text-base-plus font-medium text-foreground/70 transition-colors hover:text-primary">
             <Phone className="h-4 w-4" />
             1234 567 890
           </a>
-          <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90">
+          <Button asChild className="bg-accent text-accent-foreground hover:bg-accent/90 text-base-plus" size="lg">
             <Link href="/contact">Start Here</Link>
           </Button>
           <ThemeSwitcher />

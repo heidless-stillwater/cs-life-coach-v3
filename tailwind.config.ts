@@ -14,6 +14,10 @@ export default {
         headline: ['"Lato"', 'sans-serif'],
         code: ['monospace'],
       },
+      fontSize: {
+        'base-plus': '1.0625rem', // 17px
+        'xl-plus': '1.375rem', // 22px
+      },
       colors: {
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
