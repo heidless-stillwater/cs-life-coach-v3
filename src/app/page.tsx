@@ -31,7 +31,7 @@ const services = [
 
 const testimonials = [
   {
-    quote: "TESTWorking with CS Fitness has been a game-changer. The personalized plan was easy to follow and incredibly effective. I've never felt stronger or more confident!",
+    quote: "Working with CS Fitness has been a game-changer. The personalized plan was easy to follow and incredibly effective. I've never felt stronger or more confident!",
     name: "Alex Johnson",
     title: "Software Engineer",
     avatar: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/female-black-headshot-0.jpg",
@@ -155,9 +155,9 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4 text-sm">Testimonials</Badge>
-            <h2 className="font-headline text-3xl md:text-4xl font-bold">TESTSuccess Stories from Our Clients</h2>
+            <h2 className="font-headline text-3xl md:text-4xl font-bold">Success Stories from Our Clients</h2>
             <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
-              TESTDon't just take our word for it. Here's what our clients have to say about their experience.
+              Don't just take our word for it. Here's what our clients have to say about their experience.
             </p>
           </div>
           <Carousel
