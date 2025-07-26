@@ -53,31 +53,37 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center text-center text-white">
-        <Image 
-          src="https://placehold.co/1920x1080.png" 
-          alt="Inspiring landscape" 
-          fill
-          className="absolute z-0 object-cover"
-          data-ai-hint="inspiring landscape"
-          priority
-        />
-        <div className="absolute inset-0 bg-primary/70 z-10"></div>
-        <div className="relative z-20 container mx-auto px-4">
-          <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight">
-            Find Your <span style={{ color: '#55a8e3' }}>Clarity</span>. <br /> Unlock Your <span style={{ color: '#55a8e3' }}>Growth</span>.
-          </h1>
-          <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-primary-foreground/90">
-            Professional life coaching to help you navigate life's challenges and achieve your dreams.
-          </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-base-plus">
-              <Link href="/contact">Get Started Today</Link>
-            </Button>
-            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-base-plus">
-              <Link href="/services">Our Services</Link>
-            </Button>
-          </div>
+      <section className="bg-secondary">
+        <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-2 gap-8 items-center py-16 md:py-24">
+                <div className="order-2 md:order-1 text-center md:text-left">
+                    <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight text-foreground">
+                        Find Your <span style={{ color: '#55a8e3' }}>Clarity</span>. <br /> Unlock Your <span style={{ color: '#55a8e3' }}>Growth</span>.
+                    </h1>
+                    <p className="mt-4 max-w-xl mx-auto md:mx-0 text-lg md:text-xl text-muted-foreground">
+                        Professional life coaching to help you navigate life's challenges and achieve your dreams.
+                    </p>
+                    <div className="mt-8 flex flex-wrap justify-center md:justify-start gap-4">
+                        <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 text-base-plus">
+                            <Link href="/contact">Get Started Today</Link>
+                        </Button>
+                        <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 text-base-plus">
+                            <Link href="/services">Our Services</Link>
+                        </Button>
+                    </div>
+                </div>
+                 <div className="order-1 md:order-2">
+                    <Image
+                        src="https://placehold.co/800x800.png"
+                        alt="Inspiring landscape"
+                        width={800}
+                        height={800}
+                        className="rounded-lg shadow-xl mx-auto"
+                        data-ai-hint="inspiring landscape"
+                        priority
+                    />
+                </div>
+            </div>
         </div>
       </section>
 
