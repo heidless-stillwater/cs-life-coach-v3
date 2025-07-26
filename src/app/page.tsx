@@ -10,18 +10,21 @@ import { Badge } from '@/components/ui/badge';
 
 const services = [
   {
-    title: "Career Coaching",
-    description: "Navigate your career path with confidence. We help with transitions, promotions, and finding fulfilling work.",
-    image: { src: "https://placehold.co/600x400.png", hint: "career office" }
+    title: "TESTCareer Coaching",
+    description: "TESTNavigate your career path with confidence. We help with transitions, promotions, and finding fulfilling work.",
+    linkText: "TESTLearn Mode",
+    image: { src: "https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/career-coaching.jpg", hint: "career office" }
   },
   {
     title: "Personal Growth",
     description: "Unlock your full potential. Build self-awareness, improve habits, and create a life you love.",
+    linkText: "Learn More",
     image: { src: "https://placehold.co/600x400.png", hint: "personal growth" }
   },
   {
     title: "Relationship & Family",
     description: "Foster stronger connections. Improve communication and build healthier, more meaningful relationships.",
+    linkText: "Learn More",
     image: { src: "https://placehold.co/600x400.png", hint: "happy family" }
   }
 ];
@@ -108,10 +111,8 @@ export default function Home() {
       <section id="services" className="py-16 md:py-24 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="font-headline text-3xl md:text-4xl font-bold">How We Can Help</h2>
-            <p className="mt-4 max-w-2xl mx-auto text-muted-foreground">
-              We offer a range of specialized coaching services tailored to your unique needs.
-            </p>
+            <Badge variant="outline" className="mb-4 text-sm">What We Do</Badge>
+            <h2 className="font-headline text-3xl md:text-4xl font-bold">TESTHow We Can Help</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service) => (
@@ -125,7 +126,7 @@ export default function Home() {
                 </CardContent>
                 <CardFooter>
                     <Button asChild variant="link" className="text-primary p-0">
-                        <Link href="/services">Learn More <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                        <Link href="/services">{service.linkText} <ArrowRight className="ml-2 h-4 w-4" /></Link>
                     </Button>
                 </CardFooter>
               </Card>
