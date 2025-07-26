@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 const coreValues = [
     { text: "Empathy & Understanding", icon: CheckCircle },
     { text: "Integrity & Confidentiality", icon: CheckCircle },
-    { text: "Empowerment & Growth", icon: PiggyBank },
+    { text: "Empowerment & Growth", icon: CheckCircle },
     { text: "Authenticity & Trust", icon: PiggyBank }
 ];
 
@@ -53,7 +53,7 @@ export default function AboutPage() {
             <section className="py-16 md:py-24 bg-secondary">
                 <div className="container mx-auto px-4">
                     <div className="text-center mb-12">
-                        <h2 className="font-headline text-3xl md:text-4xl font-bold">TESTOur Philosophy & Approach</h2>
+                        <h2 className="font-headline text-3xl md:text-4xl font-bold">Our Philosophy & Approach</h2>
                         <p className="mt-4 max-w-3xl mx-auto text-muted-foreground">
                             We believe that coaching is a collaborative partnership. Our methodology combines proven psychological principles with personalized strategies to create a supportive and transformative experience.
                         </p>
