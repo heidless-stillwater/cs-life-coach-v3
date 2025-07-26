@@ -60,7 +60,18 @@ export default function Home() {
       <section className="bg-secondary">
         <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-8 items-center py-16 md:py-24">
-                <div className="order-2 md:order-1 text-center md:text-left">
+                <div className="order-1">
+                    <Image
+                        src="https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/homepage-hero.jpg"
+                        alt="Inspiring landscape"
+                        width={800}
+                        height={800}
+                        className="rounded-lg shadow-xl mx-auto"
+                        data-ai-hint="inspiring landscape"
+                        priority
+                    />
+                </div>
+                <div className="order-2 text-center md:text-left">
                     <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight text-foreground">
                         Find Your <span style={{ color: '#55a8e3' }}>Clarity</span>. <br /> Unlock Your <span style={{ color: '#55a8e3' }}>Growth</span>.
                     </h1>
@@ -75,17 +86,6 @@ export default function Home() {
                             <Link href="/services">Our Services</Link>
                         </Button>
                     </div>
-                </div>
-                 <div className="order-1 md:order-2">
-                    <Image
-                        src="https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/homepage-hero.jpg"
-                        alt="Inspiring landscape"
-                        width={800}
-                        height={800}
-                        className="rounded-lg shadow-xl mx-auto"
-                        data-ai-hint="inspiring landscape"
-                        priority
-                    />
                 </div>
             </div>
         </div>
