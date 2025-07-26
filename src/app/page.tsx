@@ -98,24 +98,28 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-16 md:py-24 bg-secondary">
-        <div className="container mx-auto px-4">
+      <section id="services" className="py-16 md:py-24 bg-secondary relative bg-cover bg-center text-white" style={{ backgroundImage: "url('https://storage.googleapis.com/heidless_case_studies/c-life-coach/images-live/homepage-hero.jpg')" }}>
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="container mx-auto px-4 relative">
           <div className="text-center mb-12">
-            <Badge variant="outline" className="mb-4 text-sm">What We Do</Badge>
-            <h2 className="font-headline text-3xl md:text-4xl font-bold">How We Can Help</h2>
+            <Badge variant="outline" className="mb-4 text-sm border-white/80 text-white/90">What We Do</Badge>
+            <h2 className="font-headline text-3xl md:text-4xl font-bold">Our Coaching Services</h2>
+            <p className="mt-4 max-w-3xl mx-auto text-lg text-white/90">
+                Tailored programs designed to help you achieve clarity, growth, and success in key areas of your life.
+            </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service) => (
-              <Card key={service.title} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <Card key={service.title} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 bg-white/10 backdrop-blur-sm border-white/20">
                 <Image src={service.image.src} alt={service.title} width={600} height={400} className="w-full h-48 object-cover" data-ai-hint={service.image.hint} />
                 <CardHeader>
-                  <CardTitle className="font-headline">{service.title}</CardTitle>
+                  <CardTitle className="font-headline text-white">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                  <p className="text-muted-foreground">{service.description}</p>
+                  <p className="text-white/80">{service.description}</p>
                 </CardContent>
                 <CardFooter>
-                    <Button asChild variant="link" className="text-primary p-0">
+                    <Button asChild variant="link" className="text-accent p-0">
                         <Link href="/services">{service.linkText} <ArrowRight className="ml-2 h-4 w-4" /></Link>
                     </Button>
                 </CardFooter>
