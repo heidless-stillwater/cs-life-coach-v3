@@ -39,7 +39,7 @@ const testimonials = [
   },
   {
     quote: "I found a new sense of purpose and clarity. The guidance was invaluable in my personal growth journey.",
-    name: "Samantha Lee",
+    name: "Samanthaee",
     title: "Marketing Manager",
     avatar: "https://placehold.co/100x100.png",
     hint: "woman portrait"
