@@ -17,6 +17,7 @@ export default {
       fontSize: {
         'base-plus': '1.0625rem', // 17px
         'xl-plus': '1.375rem', // 22px
+        'xxl-plus': '1.5625rem', // 25px
       },
       colors: {
         background: 'hsl(var(--background))',
