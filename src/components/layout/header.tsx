@@ -11,7 +11,6 @@ import { usePathname } from 'next/navigation';
 import { ThemeSwitcher } from '@/components/theme-switcher';
 
 const navLinks = [
-  { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
   { href: '/services', label: 'Services' },
   { href: '/testimonials', label: 'Testimonials' },
